@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root versionMajor="1" versionMinor="9">
+  <kernel name="torus" language="ip" vlnv="user.org:user:torus:1.0" attributes="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" hwControlProtocol="ap_ctrl_none">
+    <ports>
+      <port name="axis_m" mode="write_only" dataWidth="64" portType="stream"/>
+      <port name="axis_s" mode="read_only" dataWidth="64" portType="stream"/>
+    </ports>
+    <args>
+      <arg name="axis_m" addressQualifier="4" id="0" port="axis_m" size="0x8" offset="0x0" hostOffset="0x0" hostSize="0x8" type="void*"/>
+      <arg name="axis_s" addressQualifier="4" id="1" port="axis_s" size="0x8" offset="0x0" hostOffset="0x0" hostSize="0x8" type="void*"/>
+    </args>
+  </kernel>
+</root>
